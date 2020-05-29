@@ -1,0 +1,11 @@
+//> 1Mind Template for Svelte/Sapper Todo List.
+
+Template Todo:
+  ☐ Delete all but template files
+  ☐ Make new gloabal.CSS
+  ☐ Redue template.html 
+
+Features:
+  ☐ More shared components
+  ☐ Mixins for Sass?
+  ☐ Look at Parcel over Rollup
