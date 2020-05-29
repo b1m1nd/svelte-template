@@ -1,26 +1,7 @@
 <script>
   import EmailBtn from '../Components/shared/EmailBtn.svelte'
-  import Modal from '../Components/shared/Modal.svelte'
   let val = 420
   let someString = 'Light one up, Pug style'
-  let showModal = false
-
-  let people = [
-    { name: 'brent', age: '38', id: 1 },
-    { name: 'max', age: '25', id: 2 },
-    { name: 'mia', age: '33', id: 3 },
-  ]
-
-  const addPerson = (e) => {
-    const person = e.detail
-    people = [person, ...people]
-    showModal = false
-    console.log(e.detail)
-  }
-
-  const toggleModal = () => {
-    showModal = !showModal
-  }
 </script>
 
 <svelte:head>

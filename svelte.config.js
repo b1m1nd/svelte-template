@@ -1,8 +1,10 @@
 import sveltePreprocess from 'svelte-preprocess'
 
 const preprocess = sveltePreprocess({
+  javascript: true,
   scss: true,
   pug: true,
+  postcss: true,
 })
 
 /* let onwarn = (warning, handler) => {

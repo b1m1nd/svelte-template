@@ -14,6 +14,7 @@ import sveltePreprocess from 'svelte-preprocess'
 const preprocess = sveltePreprocess({
 	scss: true,
 	pug: true,
+	postcss: true,
 	// ...
 })
 
