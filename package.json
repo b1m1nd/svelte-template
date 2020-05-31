@@ -12,11 +12,8 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.0",
     "compression": "^1.7.1",
     "polka": "next",
-    "postcss": "^7.0.31",
-    "postcss-load-config": "^2.1.0",
     "sirv": "^0.4.0"
   },
   "devDependencies": {
@@ -37,6 +34,10 @@
     "rollup-plugin-terser": "^5.3.0",
     "sapper": "^0.27.0",
     "svelte": "^3.0.0",
-    "svelte-preprocess": "^3.7.4"
+    "svelte-preprocess": "^3.7.4",
+    "postcss": "^7.0.31",
+    "postcss-load-config": "^2.1.0",
+    "postcss-scss": "^2.1.1",
+    "autoprefixer": "^9.8.0"
   }
 }
