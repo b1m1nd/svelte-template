@@ -1,8 +1,11 @@
 <script>
+  import { onMount, onDestroy } from 'svelte'
   import Icon from 'fa-svelte'
   import { faArrowsAlt, faArrowDown, faFeather, faBacon, faFish } from '@fortawesome/free-solid-svg-icons'
   import { gsap } from 'gsap'
-  import { animate } from '../gsap.js'
+
+  import { animate, scrollMe } from '../gsap.js'
+
   let desc = false
   let msg = 'click me'
   function testClick(e) {
@@ -17,6 +20,7 @@
 <svelte:head>
   <title>Projects</title>
 </svelte:head>
+
 <p use:animate={{ type: 'from', duration: 1, opacity: 0, x: -100 }}>just some projects</p>
 <p use:animate={{ type: 'from', duration: 1, opacity: 0, x: 100, onComplete: () => (desc = true) }}>
   <Icon icon={faArrowDown} />
@@ -38,7 +42,21 @@ Test
 More
 <Icon icon={faBacon} />
 Really
+<div class="spacer">test</div>
+<div class="pinned" use:scrollMe={{ duration: 1, opacity: 0, x: 100 }}>
+  <p>testPin</p>
+</div>
+<div class="spacer">test</div>
+<div class="pinned" use:scrollMe={{ duration: 1, opacity: 0, y: -100 }}>
+  <p>testPin</p>
+</div>
+<div class="spacer">test</div>
 
 <style type="text/scss">
-
+  .spacer {
+    min-height: 100vh;
+  }
+  .pinned {
+    background: grey;
+  }
 </style>
