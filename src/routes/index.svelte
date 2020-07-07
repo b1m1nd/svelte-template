@@ -15,7 +15,7 @@
     <figure>
       <EmailBtn email="max@none.com" btnText="Email Max" />
       <img alt="Success Kid" src="/images/successkid.jpg" />
-      <figcaption>Have fun with Sapper!</figcaption>
+      <figcaption>Have fun with Svelte and Gsap!</figcaption>
 
     </figure>
     <!-- prettier-ignore -->
